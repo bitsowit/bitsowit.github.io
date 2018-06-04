@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://bitsowit.com/2018/05/31/MongoDB 集群搭建/index.html">
 <meta property="og:site_name" content="bitsowit">
 <meta property="og:description" content="这里主要介绍Replica Set 模式  docker-compose.yml  1234567891011121314151617181920212223242526272829version: &amp;apos;1&amp;apos;services:  rs1:    image: mongo:3.2.11    volumes:      - /data/mongo/db/ms1:/data/db">
-<meta property="og:updated_time" content="2018-05-31T11:30:35.000Z">
+<meta property="og:updated_time" content="2018-06-04T08:46:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用docker-compose 搭建 MongoDB 集群">
 <meta name="twitter:description" content="这里主要介绍Replica Set 模式  docker-compose.yml  1234567891011121314151617181920212223242526272829version: &amp;apos;1&amp;apos;services:  rs1:    image: mongo:3.2.11    volumes:      - /data/mongo/db/ms1:/data/db">
@@ -413,7 +413,7 @@
 <ol>
 <li>创建文件夹</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mkdir -p /data/mongo/db/ms1 /data/mongo/db/ms2 /data/mongo/db/ms2</div><div class="line">mkdir -p /data/mongo/conf/ms1 /data/mongo/conf/ms2 /data/mongo/conf/ms2</div><div class="line">mkdir -p /data/mongo/log/ms1 /data/mongo/log/ms2 /data/mongo/log/ms2</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mkdir -p /data/mongo/db/ms1 /data/mongo/db/ms2 /data/mongo/db/ms3</div><div class="line">mkdir -p /data/mongo/conf/ms1 /data/mongo/conf/ms2 /data/mongo/conf/ms3</div><div class="line">mkdir -p /data/mongo/log/ms1 /data/mongo/log/ms2 /data/mongo/log/ms3</div></pre></td></tr></table></figure>
 <p>这里的三个路径分别存放数据，配置及日志。</p>
 <ol>
 <li>mongod.conf</li>
